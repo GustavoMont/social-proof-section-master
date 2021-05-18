@@ -12,10 +12,12 @@ html,body{
 
 body {
     padding: 0 6.4vw;
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
 }
 
 section {
-    border: 2px solid black;
     margin-bottom: 50px;
 }
 /* Title ============================================ */
@@ -25,28 +27,47 @@ h2{
     font-size: 2.2rem;
     color: hsl(300, 43%, 22%);
     margin-top: 80px;
+    margin-bottom: 1.6rem;
+    
 }
 /* Paragraph ============================================ */
-p {
+.about {
     color: hsl(303, 10%, 53%);
-    text-align: center;
     font-weight: 400;
     font-size: 1rem;
+    text-align: center;
 }
+/* RATED ================================================== */
+.rated {
+    text-align: center;
+    background: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    padding: 1.3rem 0;
+    margin-bottom: 16px;
+}
+.rated span {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.rated .stars{
+    margin-bottom: 1rem;
+}
+
+
 /* Avaliation =============================================== */
 .avaliation {
     background: hsl(300, 43%, 22%);
     padding: 2.6rem 2.1rem;
+    margin-bottom: 16px;
+    border-radius: 10px;
 }
 /* Profile ================================================ */
 .profile{
     display: flex;
     align-items: center;
+    justify-content: space-between;     
+    width: 175px;
 } 
-.profile .info {
-    margin-left: 20px;
-    line-height: 1.4rem;
-}
 .info .name{
     color: white;
     font-weight: 700;
@@ -56,8 +77,14 @@ p {
     font-size: .8rem;
     font-weight: 400;
 }
-
 .profile img {
     border-radius: 50%;
-    width: 59px;
+    width: 47px;
+}
+.avaliation p {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+
+    margin-top: 30px;
 }
