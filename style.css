@@ -6,7 +6,58 @@
 
 html,body{
     min-height: 100vh;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
 }
+
 body {
     padding: 0 6.4vw;
+}
+
+section {
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+/* Title ============================================ */
+h2{
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.2rem;
+    color: hsl(300, 43%, 22%);
+    margin-top: 80px;
+}
+/* Paragraph ============================================ */
+p {
+    color: hsl(303, 10%, 53%);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* Avaliation =============================================== */
+.avaliation {
+    background: hsl(300, 43%, 22%);
+    padding: 2.6rem 2.1rem;
+}
+/* Profile ================================================ */
+.profile{
+    display: flex;
+    align-items: center;
+} 
+.profile .info {
+    margin-left: 20px;
+    line-height: 1.4rem;
+}
+.info .name{
+    color: white;
+    font-weight: 700;
+}
+.info .verify{
+    color: hsl(333, 80%, 67%);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 59px;
 }
