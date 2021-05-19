@@ -13,7 +13,7 @@ html,body{
 body {
     padding: 0 6.4vw;
     background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
-    background-position: left top, right bottom;
+    background-position: left top, bottom center;
     background-repeat: no-repeat, no-repeat;
 }
 
@@ -42,7 +42,9 @@ h2{
     text-align: center;
     background: hsl(300, 24%, 96%);
     border-radius: 5px;
+    max-width: 445px;
     padding: 1.3rem 0;
+    margin: auto;
     margin-bottom: 16px;
 }
 .rated span {
@@ -58,8 +60,11 @@ h2{
 .avaliation {
     background: hsl(300, 43%, 22%);
     padding: 2.6rem 2.1rem;
+    margin: auto;
     margin-bottom: 16px;
     border-radius: 10px;
+    max-width: 350px;
+
 }
 /* Profile ================================================ */
 .profile{
@@ -87,4 +92,68 @@ h2{
     font-size: 1rem;
 
     margin-top: 30px;
+}
+@media(min-width: 1100px)
+{
+    body{
+        position: relative;
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        
+    }
+    h2{
+        font-size: 4rem;
+        width: 600px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .about{
+        font-size: 1.2rem;
+        width: 600px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 2rem;
+    }
+    .star-rated{
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 122px;
+        top: 10px;
+    }
+    .rated{
+        width: 445px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .rated .stars{
+        display: inline;
+    }
+    #review{
+        align-self: flex-start;
+    }
+    #guru{
+        align-self: center;
+    }
+    #bestech{
+        align-self: flex-end;
+    }
+    .avaliation-container{
+        display: flex;
+        justify-content: space-around;
+        height: 336px;
+    }
+    #av1{
+        align-self: flex-start;
+    }
+    #av2{
+        align-self: center;
+    }
+    #av3{
+        align-self: flex-end;
+    }
+    .avaliation{
+        margin: 0;
+    }
+    
 }
