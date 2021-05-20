@@ -181,4 +181,15 @@ h2{
         margin-top: auto;
         justify-self: flex-end;
     }
+    @keyframes color {
+        0%{
+            color: hsl(228, 45%, 44%);
+        }
+        50%{
+            color: hsl(290, 100%, 37%);
+        }
+        100%{
+            color: hsl(228, 45%, 44%);
+        }
+    }
 }
